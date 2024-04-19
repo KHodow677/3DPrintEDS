@@ -21,7 +21,8 @@ class Modeler:
 
     def create_window(self):
         self.visualizer.create_window(window_name="Rotated Mesh", width=800, height=600, visible=False)
-        self.visualizer.get_render_option().background_color = np.asarray([0, 0, 0])  # Set background to black
+        self.visualizer.get_render_option().background_color = np.asarray([0, 0, 0]) 
+        self.visualizer.get_render_option().ambient_intensity = 0.2
 
     def add_geometry(self):
         self.visualizer.add_geometry(self.mesh)

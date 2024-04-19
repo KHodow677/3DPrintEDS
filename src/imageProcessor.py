@@ -23,6 +23,13 @@ class ImageProcessor:
         isolated_color = self.isolate_color(frame, self.rgb_color, self.threshold)
         return isolated_color
 
+    def get_darkened_frame(self, frame, factor):
+        factor = max(0, min(factor, 1))
+        frame_float = frame.astype(np.float32)
+        lower_bright_frame = frame_float * (1 - factor)
+        lower_bright_frame = np.clip(lower_bright_frame, 0, 255).astype(np.uint8)
+        return lower_bright_frame
+
     def get_cropped_frame(self, frame):
         x, y, w, h = self.get_crop_dimensions(frame)
         if x > x + w or y > y + h:
