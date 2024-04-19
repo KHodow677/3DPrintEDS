@@ -8,11 +8,13 @@ sys.path.append(os.getcwd())
 
 from src.imageProcessor import ImageProcessor
 from src.modeler import Modeler
+from src. comparator import Comparator
 
 class App:
     def __init__(self):
         self.processor = ImageProcessor([255, 128, 0], 10)
         self.modeler = Modeler("example.STL")
+        self.comparator = Comparator()
         self.pipeline = rs.pipeline()
         self.config = rs.config()
         self.config.enable_stream(rs.stream.color, 640, 480, rs.format.rgb8, 30)
@@ -37,9 +39,8 @@ class App:
             self.image_item = dpg.add_image("texture_tag")
 
         with dpg.window(label="Controls"):
-            dpg.add_button(label="Save Cropped Frame", callback=self.save_cropped_frame)
-            dpg.add_button(label="Save Sliced Frame", callback=self.save_sliced_frame)
-            dpg.add_button(label="Save Darkened Frame", callback=self.save_darkened_frame)
+            dpg.add_button(label="Generate Slices", callback= self.generate_slices)
+            dpg.add_button(label="Compare Frames", callback= self.compare_frame_similarity)
 
         dpg.show_viewport()
 
@@ -65,34 +66,39 @@ class App:
         self.pipeline.stop()
         dpg.destroy_context()
 
-    def save_cropped_frame(self):
+    def get_cropped_frame(self):
         frames = self.pipeline.wait_for_frames()
         frame = np.asanyarray(frames.get_color_frame().get_data())
         frame = cv.cvtColor(frame, cv.COLOR_BGR2RGB)
         frame = self.processor.get_filtered_frame(frame)
 
         cropped_frame = self.processor.get_cropped_frame(frame)
-        if cropped_frame is not None:
-            cv.imwrite("frame.png", cropped_frame)
+        return cropped_frame
 
-
-    def save_sliced_frame(self):
-        image_path = "Image1.png"
-        frame = cv.imread(image_path)
-
+    def get_sliced_frame(self, frame):
         cropped_frame = self.processor.get_cropped_frame(frame)
 
-        if cropped_frame is not None:
-            cv.imwrite("slicedFrame.png", cropped_frame)
+        return cropped_frame
 
-    def save_darkened_frame(self):
-        image_path = "Image1.png"
-        frame = cv.imread(image_path)
-
+    def get_darkened_frame(self, frame):
         darkened_frame = self.processor.get_darkened_frame(frame, 0.625)
 
-        if darkened_frame is not None:
-            cv.imwrite("darkenedFrame.png", darkened_frame)
+        return darkened_frame
+
+    def generate_slices(self):
+        self.modeler.run()
+
+    def compare_frame_similarity(self):
+        frame1 = self.get_cropped_frame()
+        frame2 = self.get_sliced_frame(cv.imread("Image2.png"))
+        frame2 = self.get_darkened_frame(frame2) 
+
+        frame1new, frame2new = self.processor.resize_frames(frame1, frame2)
+        cv.imwrite("frame1.png", frame1new)
+        cv.imwrite("frame2.png", frame2new)
+
+        print(self.comparator.compare_frames(frame1new, frame2new))
+
 
 if __name__ == "__main__":
     app = App()

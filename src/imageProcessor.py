@@ -67,3 +67,26 @@ class ImageProcessor:
                 break
 
         return start_width, start_height, end_width - start_width, end_height - start_height
+
+    def resize_frames(self, frame1, frame2):
+        # Get dimensions of the frames
+        height1, width1 = frame1.shape[:2]
+        height2, width2 = frame2.shape[:2]
+
+        # Determine which frame is larger
+        if height1 * width1 > height2 * width2:
+            larger_frame = frame1
+            smaller_frame = frame2
+        else:
+            larger_frame = frame2
+            smaller_frame = frame1
+
+        # Resize the larger frame to match the dimensions of the smaller frame
+        resized_frame = cv.resize(larger_frame, (width2, height2))
+
+        # Check which frame was originally frame1 and return the resized frames accordingly
+        if larger_frame is frame1:
+            return resized_frame, smaller_frame
+        else:
+            return smaller_frame, resized_frame
+

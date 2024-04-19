@@ -9,6 +9,11 @@ class Modeler:
         self.rotation_increment = np.pi / 2
         self.scaling_factor = 0.5
 
+        rotation_matrix_x = np.array([[1, 0, 0],
+                                      [0, np.cos(-np.pi / 2), -np.sin(-np.pi / 2)],
+                                      [0, np.sin(-np.pi / 2), np.cos(-np.pi / 2)]])
+        self.rotate_mesh(rotation_matrix_x)
+
     def rotate_mesh(self, rotation_matrix, center=None):
         if center is None:
             center = self.mesh.get_center()
@@ -22,7 +27,6 @@ class Modeler:
     def create_window(self):
         self.visualizer.create_window(window_name="Rotated Mesh", width=800, height=600, visible=False)
         self.visualizer.get_render_option().background_color = np.asarray([0, 0, 0]) 
-        self.visualizer.get_render_option().ambient_intensity = 0.2
 
     def add_geometry(self):
         self.visualizer.add_geometry(self.mesh)
@@ -56,4 +60,5 @@ class Modeler:
 # Example usage:
 if __name__ == "__main__":
     modeler = Modeler("example.STL")
+    modeler.run()
     modeler.run()
