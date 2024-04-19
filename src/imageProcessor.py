@@ -32,21 +32,31 @@ class ImageProcessor:
         return cropped_image
 
     def get_crop_dimensions(self, frame):
-        # Invert the frame to make black pixels white and other pixels black
-        inverted_frame = cv.bitwise_not(frame)
-        gray = cv.cvtColor(inverted_frame, cv.COLOR_BGR2GRAY)
-
-        # Threshold the inverted frame to get binary image with black pixels as white
+        gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
         _, thresh = cv.threshold(gray, 1, 255, cv.THRESH_BINARY)
 
-        # Find contours of white (black) pixels
-        contours, _ = cv.findContours(thresh, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
+        width = thresh.shape[1]
+        for x in range(width):
+            if np.any(thresh[:, x] != 0):
+                start_width = x
+                break
+        else:
+            return 0, 0, frame.shape[1], frame.shape[0]  
 
-        # If no contours found, return full frame dimensions
-        if not contours:
-            return 0, 0, frame.shape[1], frame.shape[0]
+        for x in range(width - 1, -1, -1):
+            if np.any(thresh[:, x] != 0):
+                end_width = x
+                break
 
-        # Get bounding box of the largest contour (bounding box of black pixels)
-        x, y, w, h = cv.boundingRect(contours[0])
+        height = thresh.shape[0]
+        for y in range(height):
+            if np.any(thresh[y, start_width:end_width + 1] != 0):
+                start_height = y
+                break
 
-        return x, y, w, h
+        for y in range(height - 1, -1, -1):
+            if np.any(thresh[y, start_width:end_width + 1] != 0):
+                end_height = y
+                break
+
+        return start_width, start_height, end_width - start_width, end_height - start_height
