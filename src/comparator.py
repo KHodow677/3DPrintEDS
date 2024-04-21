@@ -12,8 +12,10 @@ class Comparator:
     def compare_frames(self, frame1, frame2):
         gray_frame1 = cv2.cvtColor(frame1, cv2.COLOR_BGR2GRAY)
         gray_frame2 = cv2.cvtColor(frame2, cv2.COLOR_BGR2GRAY)
-        
-        similarity_index, _ = ssim(gray_frame1, gray_frame2, full=True)
+        try:
+            similarity_index, _ = ssim(gray_frame1, gray_frame2, full=True)
+        except:
+            return 0.0
         return similarity_index
 
     def get_frame_at_pixel_height(self, frame, height_from_bottom):

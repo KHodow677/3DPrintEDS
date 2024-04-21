@@ -1,8 +1,9 @@
 import open3d as o3d
 import numpy as np
+import cv2 as cv
 
 class Modeler:
-    def __init__(self, mesh_file):
+    def __init__(self, mesh_file, processor):
         self.mesh = o3d.io.read_triangle_mesh(mesh_file)
         self.mesh.compute_vertex_normals()
         self.visualizer = o3d.visualization.Visualizer()
@@ -13,6 +14,7 @@ class Modeler:
                                       [0, np.cos(-np.pi / 2), -np.sin(-np.pi / 2)],
                                       [0, np.sin(-np.pi / 2), np.cos(-np.pi / 2)]])
         self.rotate_mesh(rotation_matrix_x)
+        self.processor = processor
 
     def rotate_mesh(self, rotation_matrix, center=None):
         if center is None:
@@ -42,6 +44,10 @@ class Modeler:
             self.visualizer.update_renderer()
             self.visualizer.capture_screen_image(f"Image{i}.png")
             i += 1
+        for i in range(1, 5):
+            image = cv.imread(f"Image{i}.png")
+            darkened_image = self.processor.get_darkened_frame(image, 0.625)
+            cv.imwrite(f"Image{i}.png", darkened_image)
 
     def rotate_mesh_y(self):
         mesh_center = self.mesh.get_center()
@@ -57,8 +63,3 @@ class Modeler:
         self.update_and_capture(5)
         self.visualizer.destroy_window()
 
-# Example usage:
-if __name__ == "__main__":
-    modeler = Modeler("example.STL")
-    modeler.run()
-    modeler.run()
