@@ -107,7 +107,6 @@ class App:
             dpg.add_static_texture(width=width_y2, height=height_y2, default_value=data_y2, tag="y2image")
         
         
-        
         with dpg.window(label="Video Window", width = self.frame_width, height = self.frame_height + 40, no_close=True):
             self.image_item = dpg.add_image("texture_tag")
 
