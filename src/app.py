@@ -24,10 +24,11 @@ class App:
         #Parameters
         self.stringingEnabled = True
         self.similarityEnabled = True
-        self.ipAddress = 0
+        self.similarityThreshold = 0.75
         self.confidenceThreshold = 0.7
         self.RGBColor = [255, 128, 0]
-        self.outputStr = ""
+        self.outputStr_sim = ""
+        self.outputStr_str = ""
 
         #Finding screen dimensions
         width, height = pyautogui.size()[0], pyautogui.size()[1]
@@ -62,8 +63,8 @@ class App:
         def similarity_checkbox_change(sender,app_data):
             self.similarityEnabled = app_data
         
-        def ipbox_change(sender,app_data):
-            self.ipAddress = app_data
+        def sim_slide_change(sender,app_data):
+            self.similarityThreshold = app_data
 
         def conf_slide_change(sender,app_data):
             self.confidenceThreshold = app_data
@@ -95,16 +96,16 @@ class App:
 
 
         with dpg.texture_registry(show=False):
-            dpg.add_static_texture(width=width_x1, height=height_x1, default_value=data_x1, tag="x1image")
+            self.x1texture = dpg.add_dynamic_texture(width=width_x1, height=height_x1, default_value=data_x1, tag="x1image")
 
         with dpg.texture_registry(show=False):
-            dpg.add_static_texture(width=width_y1, height=height_y1, default_value=data_y1, tag="y1image")
+            self.y1texture = dpg.add_dynamic_texture(width=width_y1, height=height_y1, default_value=data_y1, tag="y1image")
         
         with dpg.texture_registry(show=False):
-            dpg.add_static_texture(width=width_x2, height=height_x2, default_value=data_x2, tag="x2image")
+            self.x2texture = dpg.add_dynamic_texture(width=width_x2, height=height_x2, default_value=data_x2, tag="x2image")
         
         with dpg.texture_registry(show=False):
-            dpg.add_static_texture(width=width_y2, height=height_y2, default_value=data_y2, tag="y2image")
+            self.y2texture = dpg.add_dynamic_texture(width=width_y2, height=height_y2, default_value=data_y2, tag="y2image")
         
         
         with dpg.window(label="Video Window", width = self.frame_width, height = self.frame_height + 40, no_close=True):
@@ -134,8 +135,8 @@ class App:
             dpg.set_item_callback(similarity_checkbox,similarity_checkbox_change)
 
             dpg.add_spacer(height = 20)
-            IPbox = dpg.add_input_text(label = 'IP Address',default_value='IP Address Here')
-            dpg.set_item_callback(IPbox,ipbox_change)
+            sim_slider = dpg.add_slider_float(label = 'Similarity Value', max_value=1.0,default_value=0.75)
+            dpg.set_item_callback(sim_slider,sim_slide_change)
 
             dpg.add_spacer(height = 20)
 
@@ -144,7 +145,7 @@ class App:
 
             dpg.add_spacer(height = 20)
 
-            color_select = dpg.add_color_edit((255, 128, 0, 255), label="Filament RGB")
+            color_select = dpg.add_color_edit((255, 128, 0, 255), label="Filament RGB",no_alpha = True)
             dpg.set_item_callback(color_select,color_select_change)
 
             dpg.add_spacer(height = 20)
@@ -152,10 +153,6 @@ class App:
             dpg.add_button(label="Generate Slices", callback= self.generate_slices)
 
             dpg.add_spacer(height = 10)
-
-            dpg.add_button(label="Compare Frames", callback= self.compare_frame_similarity)
-
-            dpg.add_spacer(height = 20)
 
             dpg.add_button(label="Save Error File", callback= self.save_function)
             
@@ -179,9 +176,23 @@ class App:
         data = np.flip(frame, 2)
         data = np.asfarray(data, dtype=np.float32)
         texture_data = np.true_divide(data, 255.0)
-
         dpg.set_value(self.texture_id, texture_data.ravel())
         dpg.render_dearpygui_frame()
+
+    def update_sliced_images(self):
+        width_x1, height_x1, channels_x1, data_x1 = dpg.load_image('Image1.png')
+
+        width_y1, height_y1, channels_y1, data_y1 = dpg.load_image('Image2.png')
+
+        width_x2, height_x2, channels_x2, data_x2 = dpg.load_image('Image3.png')
+
+        width_y2, height_y2, channels_y2, data_y2 = dpg.load_image('Image4.png')
+
+        dpg.set_value(self.x1texture, data_x1)
+        dpg.set_value(self.y1texture, data_y1)
+        dpg.set_value(self.x2texture, data_x2)
+        dpg.set_value(self.y2texture, data_y2)
+
     
     #Creating save file function
     def save_function(self):
@@ -191,14 +202,22 @@ class App:
 
     def run(self):
         while dpg.is_dearpygui_running():
-            if (not self.outputStr == ""):
+            if (not self.outputStr_sim == ""):
                 #Writing output to error file
                 f = open('src/error_file.txt', "a")
-                f.write(self.outputsStr + '\n')
+                f.write(self.outputsStr_sim + '\n')
                 f.close()
-                dpg.add_text(self.outputStr,parent=self.log_group)
-                self.outputStr = ""
+                dpg.add_text(self.outputStr_sim,parent=self.log_group)
+                self.outputStr_sim = ""
+            if (not self.outputStr_str == ""):
+                #Writing output to error file
+                f = open('src/error_file.txt', "a")
+                f.write(self.outputsStr_str + '\n')
+                f.close()
+                dpg.add_text(self.outputStr_str,parent=self.log_group)
+                self.outputStr_str = ""
             self.update_frame()
+            self.update_sliced_images()
 
     def cleanup(self):
         self.pipeline.stop()
