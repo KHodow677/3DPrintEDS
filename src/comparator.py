@@ -10,9 +10,9 @@ class Comparator:
         pass
     
     def compare_frames(self, frame1, frame2):
-        gray_frame1 = cv2.cvtColor(frame1, cv2.COLOR_BGR2GRAY)
-        gray_frame2 = cv2.cvtColor(frame2, cv2.COLOR_BGR2GRAY)
         try:
+            gray_frame1 = cv2.cvtColor(frame1, cv2.COLOR_BGR2GRAY)
+            gray_frame2 = cv2.cvtColor(frame2, cv2.COLOR_BGR2GRAY)
             similarity_index, _ = ssim(gray_frame1, gray_frame2, full=True)
         except:
             return 0.0
