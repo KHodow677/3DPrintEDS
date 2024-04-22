@@ -12,7 +12,7 @@ sys.path.append(os.getcwd())
 from src.imageProcessor import ImageProcessor
 from src.modeler import Modeler
 from src. comparator import Comparator
-
+from src.annotator import Annotator
 
 #Opening and clearing error file
 f = open('src/error_file.txt', "w")
@@ -33,6 +33,7 @@ class App:
         self.modeler = Modeler("example.STL", self.processor)
         self.comparator = Comparator()
         self.modeler.run()
+        self.annotator = Annotator()
 
         width, height = pyautogui.size()[0], pyautogui.size()[1]
         self.viewport_width, self.viewport_height = int(0.75*width), int(0.9*height)
@@ -222,11 +223,21 @@ class App:
             if self.similarityEnabled:
                 self.compare_frame_similarity()
             if self.stringingEnabled:
-                pass
+                pass # self.stringing_detection()
 
     def cleanup(self):
         self.pipeline.stop()
         dpg.destroy_context()
+
+    def stringing_detection(self):
+        frames = self.pipeline.wait_for_frames()
+        frame = np.asanyarray(frames.get_color_frame().get_data())
+        conf = 0.5
+        ann_image, conf_values = self.annotator.annotate(frame, conf)
+        for i in conf_values:
+            if i > self.confidenceThreshold:
+                self.outputStr_str = "Error: [Stringing]\n\tReason: Confidence is too high, confidence = " + str(i)
+        return ann_image
 
     def get_cropped_frame(self):
         frames = self.pipeline.wait_for_frames()

@@ -3,534 +3,106 @@ Error: [2D Similarity]
 Error: [2D Similarity]
 	Reason: Similarity too low, similarity = 0.0
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.35161777955856677
+	Reason: Similarity too low, similarity = 0.0
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.2184785023728258
+	Reason: Similarity too low, similarity = 0.7238397862292126
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.20043760897829468
+	Reason: Similarity too low, similarity = 0.0
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.23924601267006532
+	Reason: Similarity too low, similarity = 0.7092938533983869
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.2770760232447063
+	Reason: Similarity too low, similarity = 0.5863373748001168
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.3217675592546258
+	Reason: Similarity too low, similarity = 0.6188270607438165
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.3586359110190107
+	Reason: Similarity too low, similarity = 0.6591864246595185
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.3906425006539505
+	Reason: Similarity too low, similarity = 0.6724282277005939
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.41192405499805806
+	Reason: Similarity too low, similarity = 0.7045304665975326
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4176641655101126
+	Reason: Similarity too low, similarity = 0.703467836695197
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.44086452151904526
+	Reason: Similarity too low, similarity = 0.7387445923737146
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.44148553188365014
+	Reason: Similarity too low, similarity = 0.7100845287986584
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4511822329353172
+	Reason: Similarity too low, similarity = 0.7211900419140079
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.45231948956773754
+	Reason: Similarity too low, similarity = 0.65692965164495
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.45864231459576926
+	Reason: Similarity too low, similarity = 0.7363523110094501
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.47035107236349405
+	Reason: Similarity too low, similarity = 0.7103968874638651
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.46705408245778796
+	Reason: Similarity too low, similarity = 0.714779540454118
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.47299496363209687
+	Reason: Similarity too low, similarity = 0.7033732891544474
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4711826448012768
+	Reason: Similarity too low, similarity = 0.7116510482621591
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.48043826271018114
+	Reason: Similarity too low, similarity = 0.7104159508176545
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49407575536702475
+	Reason: Similarity too low, similarity = 0.7069437141448653
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4965043061008934
+	Reason: Similarity too low, similarity = 0.7308647054817421
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49013359093468584
+	Reason: Similarity too low, similarity = 0.7459165376349793
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4982512391528614
+	Reason: Similarity too low, similarity = 0.6316094797832048
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5025658658049527
+	Reason: Similarity too low, similarity = 0.6076287305143782
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4936114873018367
+	Reason: Similarity too low, similarity = 0.5930847688654719
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5105138473868578
+	Reason: Similarity too low, similarity = 0.5867892139602081
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5053271299258895
+	Reason: Similarity too low, similarity = 0.5975348692358586
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4926176793391085
+	Reason: Similarity too low, similarity = 0.5701696922619836
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5036836705943575
+	Reason: Similarity too low, similarity = 0.693743551154038
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4954188231568157
+	Reason: Similarity too low, similarity = 0.5855706094369523
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.507297260572306
+	Reason: Similarity too low, similarity = 0.5807804836838338
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49867109226921646
+	Reason: Similarity too low, similarity = 0.5924675728885744
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5140950926577482
+	Reason: Similarity too low, similarity = 0.5957549979311397
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5093709519464679
+	Reason: Similarity too low, similarity = 0.6104104255089574
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5028566820684289
+	Reason: Similarity too low, similarity = 0.6094290858915101
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49865031780781466
+	Reason: Similarity too low, similarity = 0.6087859746134462
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5106799791663807
+	Reason: Similarity too low, similarity = 0.6128920540160409
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5000094886893107
+	Reason: Similarity too low, similarity = 0.6142950041237807
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5100303886717469
+	Reason: Similarity too low, similarity = 0.5965600434342603
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.514864518187021
+	Reason: Similarity too low, similarity = 0.6059299159988689
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5087538106341908
+	Reason: Similarity too low, similarity = 0.6084832746187485
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5091539309690666
+	Reason: Similarity too low, similarity = 0.6120883440806898
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5156389358005518
+	Reason: Similarity too low, similarity = 0.612296078866878
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.512554006187145
+	Reason: Similarity too low, similarity = 0.5953295850313379
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5042992009960104
+	Reason: Similarity too low, similarity = 0.6010245813440727
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5102034431059284
+	Reason: Similarity too low, similarity = 0.601540237321782
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.506191490712933
+	Reason: Similarity too low, similarity = 0.5885752759112308
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4979341821425002
+	Reason: Similarity too low, similarity = 0.6005918792032897
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5066575756517305
+	Reason: Similarity too low, similarity = 0.6039130711797444
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.505495750326203
+	Reason: Similarity too low, similarity = 0.5830878226243128
 Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5092319122537028
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.50205363610584
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49582092142755385
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4994362874534389
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49572971593626525
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5060199584232873
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5030087991223264
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5040851427185378
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5081517389858125
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5024129910417483
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5037288949056764
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5145062273955731
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.510005005743862
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5070407065589072
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5064202370688509
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5030318242320085
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49492986555676854
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5093160228788222
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5086853682984781
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5109857271871334
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5045790558289454
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5039687378137513
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5048933396014076
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5053373196002532
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5089362017085443
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5100406839050619
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5038650091774484
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5074443044952399
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5120915588048822
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5050453384136918
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5107324002109392
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5046492637329372
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5056293830948247
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4978276925222821
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5046995057204732
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.50017102245165
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5115688799873397
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5003925359574458
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5044345036777723
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5033383300116844
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5120854403824583
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4946085186216528
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5083544973092217
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5054869565235875
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5008778964960628
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4871433496234765
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5013113268448767
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49986711648388776
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49955901644273026
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5086324703570755
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4809903351732436
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5037514991123982
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4940766354741069
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5027932116805943
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.51004905104602
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49175255994131994
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49464329700695303
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4962078838362762
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5026554551258096
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5049613953107779
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.48832783515050976
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5014897938814854
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4939300778177258
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4977593266391263
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49163496203071516
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4991186803346625
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49186381588805667
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5034120559956189
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5059196256882154
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4951169270759963
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4997952522059483
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5080640613187386
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5056069566321411
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5023363044294887
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.48777230376848746
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4982928412506646
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5016674402154541
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.48931946769470036
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5009110197599599
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5089609778194614
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4875856324529183
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49794037524478163
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.506417560488901
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4899236217641176
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5005630638518648
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5052107823831326
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5029009855257073
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4884894259592951
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49276142814178675
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4988065266241253
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.500603842804269
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5006973480669091
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49495268185026503
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5008318939446157
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49578435786940084
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4992097748960484
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.508268560039386
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4956722676863857
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5062968190838668
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5045242543429296
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5007296168360573
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5044451280246458
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5050580657883835
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49855315698922903
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4995928745073171
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49516199797450927
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.495891007927986
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5076630199917797
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4960916993507635
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4978497655478894
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5086970807082251
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5034775477788302
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5041766275446437
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5048562013366338
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5104134504582551
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5159727682192804
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.506900816279448
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.48688028181867454
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5078013226434149
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49025388465397557
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49752660805798776
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4979023180977136
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49561884574621046
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.502637556672117
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49703674088132893
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49655372859200014
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4918004043042383
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5109764811557055
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5025664330505899
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4944181828523372
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49014178974830014
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5044524723222071
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4963154476442517
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49484841347384334
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49234037406908926
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5014711539047734
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49432397253625165
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4858162026418156
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4922968428073626
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5027390244880007
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5126422267002724
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5019510471309435
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4909368838823618
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5024179676501623
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.470004067275476
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4741196378917282
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.41094653444641494
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.3561244091816198
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.3314876413265492
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.3006571007120946
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.28089386968349533
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.45264697504870827
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.6120763473699383
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.2643772116987031
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.2911524980154042
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.2953330862743508
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.2982800734343055
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.29024763911584084
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.30319431323994517
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.30890179429484443
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.3107558683234741
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.31698169201011933
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.31342959837643697
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.33281186513234334
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.32970586703561566
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.3328454034204587
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.326522367195501
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.3201341439301332
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.3246193455586397
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.33348828860455826
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.3551076500470961
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.36552364834931256
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.6279001515603032
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.6008252307509379
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.6180257829375357
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.45500245298780234
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.7073887533520012
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.7499865592068167
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.7359221170379437
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5137935604650938
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.560094014986041
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.6224907332711026
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5873861166729905
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49929469940184207
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5004658522567883
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4594677050605286
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4580188311345803
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4593186467607634
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49139611448627096
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4589801286317252
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4590172901150163
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.49154267182519784
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4605071967385217
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5164592907428457
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5475073888518899
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.518575316908372
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5237371343411615
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5286505004805327
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5511052341340963
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5394919273672889
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.5110680025367169
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.652009056862388
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4248722115854431
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.42878940456439496
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4387995323463374
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4521951319610569
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.45163320057622897
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.46165261990690787
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4455148064044389
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4581389924383392
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.45400244130186895
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4450049967649385
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4551132056805059
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.44833537325179856
-Error: [2D Similarity]
-	Reason: Similarity too low, similarity = 0.4515596179105422
+	Reason: Similarity too low, similarity = 0.5841428597660914
