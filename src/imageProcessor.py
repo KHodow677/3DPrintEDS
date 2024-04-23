@@ -10,7 +10,7 @@ class ImageProcessor:
         bgr_color = np.array(rgb_color[::-1], dtype=np.uint8).reshape(1, 1, 3)
         hsv_color = cv.cvtColor(bgr_color, cv.COLOR_BGR2HSV)
         hue = hsv_color[0, 0, 0]
-        lower_hue = np.array([hue - threshold, 175, 70])
+        lower_hue = np.array([hue - threshold, 200, 70])
         upper_hue = np.array([hue + threshold, 255, 255])
         hsv_frame = cv.cvtColor(frame, cv.COLOR_BGR2HSV)
         mask = cv.inRange(hsv_frame, lower_hue, upper_hue)
@@ -30,13 +30,31 @@ class ImageProcessor:
         lower_bright_frame = np.clip(lower_bright_frame, 0, 255).astype(np.uint8)
         return lower_bright_frame
 
-    def get_cropped_frame(self, frame):
+
+    def get_cropped_frame(self, frame, min_contour_area=100):
         x, y, w, h = self.get_crop_dimensions(frame)
         if x > x + w or y > y + h:
             print("No black pixels found")
             return None
+        
+        gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+        _, thresh = cv.threshold(gray, 1, 255, cv.THRESH_BINARY)
+        
+        contours, _ = cv.findContours(thresh, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
+        
+        # Filter out small contours based on area
+        filtered_contours = [cnt for cnt in contours if cv.contourArea(cnt) > min_contour_area]
+        
+        if not filtered_contours:
+            print("No significant contours found")
+            return None
+        
+        # Find bounding box of the largest contour
+        x, y, w, h = cv.boundingRect(filtered_contours[0])
+        
         cropped_image = frame[y:y+h, x:x+w]
         return cropped_image
+
 
     def get_crop_dimensions(self, frame):
         gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
@@ -69,24 +87,12 @@ class ImageProcessor:
         return start_width, start_height, end_width - start_width, end_height - start_height
 
     def resize_frames(self, frame1, frame2):
-        # Get dimensions of the frames
-        height1, width1 = frame1.shape[:2]
-        height2, width2 = frame2.shape[:2]
+        try:
+            frame1copy = frame1.copy()
+            frame2copy = frame2.copy()
+        except:
+            return frame1, frame2
+        frame2copy = cv.resize(frame2copy, (frame1copy.shape[1], frame1copy.shape[0]))
 
-        # Determine which frame is larger
-        if height1 * width1 > height2 * width2:
-            larger_frame = frame1
-            smaller_frame = frame2
-        else:
-            larger_frame = frame2
-            smaller_frame = frame1
-
-        # Resize the larger frame to match the dimensions of the smaller frame
-        resized_frame = cv.resize(larger_frame, (width2, height2))
-
-        # Check which frame was originally frame1 and return the resized frames accordingly
-        if larger_frame is frame1:
-            return resized_frame, smaller_frame
-        else:
-            return smaller_frame, resized_frame
+        return frame1copy, frame2copy
 

@@ -23,15 +23,15 @@ class App:
     def __init__(self):
         self.stringingEnabled = True
         self.similarityEnabled = True
-        self.similarityThreshold = 0.75
+        self.similarityThreshold = 1.0
         self.confidenceThreshold = 0.7
-        self.RGBColor = [255, 128, 0]
+        self.RGBColor = [255, 65, 0]
         self.outputStr_sim = ""
         self.outputStr_str = ""
         self.view = "x1"
         self.processor = ImageProcessor(self.RGBColor, 10)
         self.modeler = Modeler("example.STL", self.processor)
-        self.comparator = Comparator()
+        self.comparator = Comparator(self.processor)
         self.modeler.run()
         self.annotator = Annotator()
 
@@ -143,7 +143,7 @@ class App:
             dpg.set_item_callback(similarity_checkbox,similarity_checkbox_change)
 
             dpg.add_spacer(height = 20)
-            sim_slider = dpg.add_slider_float(label = 'Similarity Value', max_value=1.0,default_value=0.75)
+            sim_slider = dpg.add_slider_float(label = 'Similarity Value', max_value=1.0,default_value=self.similarityThreshold)
             dpg.set_item_callback(sim_slider,sim_slide_change)
 
             dpg.add_spacer(height = 20)
@@ -153,7 +153,7 @@ class App:
 
             dpg.add_spacer(height = 20)
 
-            color_select = dpg.add_color_edit((255, 128, 0, 255), label="Filament RGB",no_alpha = True)
+            color_select = dpg.add_color_edit((self.RGBColor[0], self.RGBColor[1], self.RGBColor[2], 255), label="Filament RGB",no_alpha = True)
             dpg.set_item_callback(color_select,color_select_change)
 
             dpg.add_spacer(height = 20)
@@ -246,6 +246,7 @@ class App:
         frame = self.processor.get_filtered_frame(frame)
 
         cropped_frame = self.processor.get_cropped_frame(frame)
+
         return cropped_frame
 
     def get_sliced_frame(self, frame):
@@ -265,13 +266,8 @@ class App:
     def compare_frame_similarity(self):
         frame1 = self.get_cropped_frame()
         frame2 = self.get_sliced_frame(cv.imread(self.view_map[self.view]))
-        frame2 = self.get_darkened_frame(frame2) 
 
-        frame1new, frame2new = self.processor.resize_frames(frame1, frame2)
-        # cv.imwrite("frame1.png", frame1new)
-        # cv.imwrite("frame2.png", frame2new)
-
-        sim = self.comparator.compare_progressive_frames(frame1new, frame2new, 100)
+        sim = self.comparator.compare_progressive_frames(frame1, frame2, 100)
 
         if sim < self.similarityThreshold:
             self.outputStr_sim = "Error: [2D Similarity]\n\tReason: Similarity too low, similarity = " + str(sim)
