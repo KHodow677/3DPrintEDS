@@ -40,8 +40,10 @@ class Comparator:
             similarity = self.compare_frames(frame1new, frame2new)
             max_similarity = max(max_similarity, similarity)
             if similarity == max_similarity:
-                cv.imwrite("res2.png", frame2new)
-                cv.imwrite("res1.png", frame1new)
-
+                try:
+                    cv.imwrite("res2.png", frame2new)
+                    cv.imwrite("res1.png", frame1new)
+                except:
+                    pass
         return max_similarity
 
