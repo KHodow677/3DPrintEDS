@@ -14,6 +14,11 @@ Talk about running the application. (Possibly package to an executable with pyin
 
 This is where we talk about how a complete noob is going to use the application, with screenshots of what certain buttons do
 
+<p align="center">
+  <img src="docRes/Dog.png" alt="Dog" width="500" height="auto"/>
+</p>
+
+
 ## Technical Information
 
 This is where we talk about how the systems work. We should reorganize the codebase into modules to make this more understandable
