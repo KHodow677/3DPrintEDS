@@ -14,11 +14,19 @@ Talk about running the application. (Possibly package to an executable with pyin
 
 This is where we talk about how a complete noob is going to use the application, with screenshots of what certain buttons do
 
-After the software has been downloaded, all dependencies installed, and the phsical setup configured, the 3D Print Error Detection System (EDS) can be used. First connect an Intel RealSense camera to your device using an appropriate cable. Then run the app.py file to start the application and display the GUI. An example of the GUI display is shown below.
+After the software has been downloaded, all dependencies installed, and the phsical setup configured, the 3D Print Error Detection System (EDS) can be used. First connect an Intel RealSense camera to your device using an appropriate cable. Rename the .STL file as example.STL and place it in the src folder. Then run the app.py file to start the application and display the GUI. An example of the GUI display is shown below.
 
 <p align="center">
   <img src="docRes/GUI Full Image.png" alt="GUI Full Image" width="500" height="auto"/>
 </p>
+
+The GUI is composed of several windows including the camera view window, the controls window, the sliced images window, and the error log window. The controls window is used to setup the parameters and slice the model, and is shown below.
+
+<p align="center">
+  <img src="docRes/Control Panel Image.png" alt="Control Panel Image" width="500" height="auto"/>
+</p>
+
+The first two chekcboxes can be used to disable and enable the stringing and image matching susbsystems. Below them, two sliders can be used to adjust the threshold values for the similarity score and stringing confidence. A color selector can be used to choose the filament color for the filter. The generate slices button will produce slices of the supplied model and populate the sliced images window. A drop down menu is used to match the sliced view to the orientation of the model with respect to the camera. The slices for x1, y1, x2, and y2 are shown in the images window for reference. Finally, a save error file button can be used to save the contents of the error log window.
 
 <p align="center">
   <img src="docRes/Dog.png" alt="Dog" width="500" height="auto"/>
