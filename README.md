@@ -64,5 +64,4 @@ TODO
 TODO
 
 ## Future Work
-
-Talk about what could be done in the future of our project, e.g. new systems, performance improvements, usability features.
+TODO
