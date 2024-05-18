@@ -4,11 +4,22 @@ This project is a deliverable prototype from the class ME266K at the University 
 
 ## Installation and Setup
 
-Talk about hardware setup
+### Hardware Setup
+TODO
+### Package Dependencies
+This project requires prior installation of `Python` and the `pip` package manager. 
 
-Talk about package dependencies. (Possibly setup a requirements file for ease of setup)
+Run the command to install the dependencies for the project in the `requirements.txt` file under the `src` directory.
+```
+pip install -r src/requirements.txt
+```
+From there you have all the necessary libraries for the application.
 
-Talk about running the application. (Possibly package to an executable with pyinstaller)
+### Starting the App
+To run and launch the application, run the following command and an GUI window will pop up for your print session.
+```
+python3 src/app.py
+```
 
 ## How to Use
 
@@ -28,23 +39,29 @@ The GUI is composed of several windows including the camera view window, the con
 
 The first two chekcboxes can be used to disable and enable the stringing and image matching susbsystems. Below them, two sliders can be used to adjust the threshold values for the similarity score and stringing confidence. A color selector can be used to choose the filament color for the filter. The generate slices button will produce slices of the supplied model and populate the sliced images window. A drop down menu is used to match the sliced view to the orientation of the model with respect to the camera. The slices for x1, y1, x2, and y2 are shown in the images window for reference. Finally, a save error file button can be used to save the contents of the error log window.
 
-<p align="center">
-  <img src="docRes/Dog.png" alt="Dog" width="500" height="auto"/>
-</p>
+### Connecting a Camera
+
+### Loading a Model
 
 
 ## Technical Information
 
-This is where we talk about how the systems work. We should reorganize the codebase into modules to make this more understandable
+Our error detection currently has 2 subsystems in place for finding print defects from the camera feed: **2D Image Similarity** and **Stringing Machine Learning**. The main entry point for the application is located in `app.py`, however, various modules are located in the `src` directory for data processing.
 
-### 2D Image Similarity
+### app.py
+TODO
 
-### Stringing Machine Learning
-```python
-print("Hi")
-```
-### GUI
+### annotator.py
+TODO
+
+### comparator.py
+TODO
+
+### imageProcessor.py
+TODO
+
+### modeler.py
+TODO
 
 ## Future Work
-
-Talk about what could be done in the future of our project, e.g. new systems, performance improvements, usability features.
+TODO
