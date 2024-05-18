@@ -6,6 +6,13 @@ This project is a deliverable prototype from the class ME266K at the University 
 
 Talk about hardware setup
 
+### Package Dependencies
+Make sure you have `Python` and the `pip` package manager. 
+
+```
+pip install -r src/requirements.txt
+```
+
 Talk about package dependencies. (Possibly setup a requirements file for ease of setup)
 
 Talk about running the application. (Possibly package to an executable with pyinstaller)
