@@ -5,8 +5,6 @@ import sys, os
 
 sys.path.append(os.getcwd())
 
-from src.imageProcessor import ImageProcessor
-
 class Comparator:
     def __init__(self, processor):
         self.processor = processor

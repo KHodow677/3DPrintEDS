@@ -1,0 +1,10 @@
+auto_mix_prep==0.2.0
+dearpygui==1.11.1
+numpy==1.21.5
+open3d==0.18.0
+opencv_python_headless==4.9.0.80
+PyAutoGUI==0.9.54
+pyrealsense2==2.54.2.5684
+skimage==0.0
+supervision==0.20.0
+ultralytics==8.1.42
