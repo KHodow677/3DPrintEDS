@@ -4,18 +4,22 @@ This project is a deliverable prototype from the class ME266K at the University 
 
 ## Installation and Setup
 
-Talk about hardware setup
-
+### Hardware Setup
+TODO
 ### Package Dependencies
-Make sure you have `Python` and the `pip` package manager. 
+This project requires prior installation of `Python` and the `pip` package manager. 
 
+Run the command to install the dependencies for the project in the `requirements.txt` file under the `src` directory.
 ```
 pip install -r src/requirements.txt
 ```
+From there you have all the necessary libraries for the application.
 
-Talk about package dependencies. (Possibly setup a requirements file for ease of setup)
-
-Talk about running the application. (Possibly package to an executable with pyinstaller)
+### Starting the App
+To run and launch the application, run the following command and an GUI window will pop up for your print session.
+```
+python3 src/app.py
+```
 
 ## How to Use
 
