@@ -46,14 +46,22 @@ The first two chekcboxes can be used to disable and enable the stringing and ima
 
 ## Technical Information
 
-Our error detection currently has 2 subsystems in place for finding print defects from the camera feed: **2D Image Similarity** and **Stringing Machine Learning**. Each with it's own separate toggle in the control panel.
+Our error detection currently has 2 subsystems in place for finding print defects from the camera feed: **2D Image Similarity** and **Stringing Machine Learning**. The main entry point for the application is located in `app.py`, however, various modules are located in the `src` directory for data processing.
 
-### 2D Image Similarity
+### app.py
+TODO
 
+### annotator.py
+TODO
 
-### Stringing Machine Learning
+### comparator.py
+TODO
 
-### GUI
+### imageProcessor.py
+TODO
+
+### modeler.py
+TODO
 
 ## Future Work
 
