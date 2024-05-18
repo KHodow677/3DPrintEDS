@@ -39,21 +39,20 @@ The GUI is composed of several windows including the camera view window, the con
 
 The first two chekcboxes can be used to disable and enable the stringing and image matching susbsystems. Below them, two sliders can be used to adjust the threshold values for the similarity score and stringing confidence. A color selector can be used to choose the filament color for the filter. The generate slices button will produce slices of the supplied model and populate the sliced images window. A drop down menu is used to match the sliced view to the orientation of the model with respect to the camera. The slices for x1, y1, x2, and y2 are shown in the images window for reference. Finally, a save error file button can be used to save the contents of the error log window.
 
-<p align="center">
-  <img src="docRes/Dog.png" alt="Dog" width="500" height="auto"/>
-</p>
+### Connecting a Camera
+
+### Loading a Model
 
 
 ## Technical Information
 
-This is where we talk about how the systems work. We should reorganize the codebase into modules to make this more understandable
+Our error detection currently has 2 subsystems in place for finding print defects from the camera feed: **2D Image Similarity** and **Stringing Machine Learning**. Each with it's own separate toggle in the control panel.
 
 ### 2D Image Similarity
 
+
 ### Stringing Machine Learning
-```python
-print("Hi")
-```
+
 ### GUI
 
 ## Future Work
