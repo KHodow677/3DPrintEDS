@@ -86,9 +86,113 @@ def create_gui(self):
     dpg.show_viewport()
 ```
 
-Callback Functions<br>
+**Callback Functions**<br>
 
 Callback functions handle user interactions with the GUI elements, updating the application's state accordingly.
+
+**Update Frame**<br>
+
+The update_frame method captures a frame from the RealSense camera, processes it, and updates the texture displayed in the GUI.
+
+```python
+def update_frame(self):
+    # Capture and process frame
+    dpg.set_value(self.texture_id, texture_data.ravel())
+    dpg.render_dearpygui_frame()
+```
+
+**Update Sliced Images**<br>
+
+The update_sliced_images method loads and updates the displayed images corresponding to the selected view.
+
+```python
+def update_sliced_images(self):
+    # Load and update images
+```
+
+**Save Function**<br>
+
+The save_function method copies the error file to a new file with a timestamp in its name.
+
+```python
+def save_function(self):
+    dest = 'src/error_file_' + str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")).replace(':','_')
+    shutil.copy('src/error_file.txt', dest)
+```
+
+**Run Loop**<br>
+
+The run method contains the main application loop, updating frames, checking for errors, and handling similarity and stringing detection.
+
+```python
+def run(self):
+    while dpg.is_dearpygui_running():
+        # Update and process frames
+```
+
+**Cleanup**<br>
+
+The cleanup method stops the RealSense pipeline and destroys the Dear PyGui context when the application exits.
+
+```python
+def cleanup(self):
+    self.pipeline.stop()
+    dpg.destroy_context()
+```
+
+**Stringing Detection**<br>
+
+The stringing_detection method captures a frame and annotates it if stringing is detected with a confidence above the threshold.
+
+```python
+def stringing_detection(self):
+    # Detect stringing and update error log
+```
+
+**Frame Processing**<br>
+
+Helper methods for frame processing, such as get_cropped_frame, get_sliced_frame, and get_darkened_frame, handle specific image manipulations.
+Generate Slices
+
+The generate_slices method triggers the modeler to run and updates the sliced images in the GUI.
+
+```python
+def generate_slices(self):
+    self.modeler.run()
+    self.update_sliced_images()
+```
+
+**Compare Frame Similarity**
+
+The compare_frame_similarity method compares the current frame with a reference image to detect significant differences.
+
+```python
+def compare_frame_similarity(self):
+    # Compare frames and update error log
+```
+
+**How to Extend the Application**<br>
+**Adding New Features**<br>
+
+To add new features to the application, follow these general steps:
+
+- Update the GUI:
+-   Modify the create_gui method to add new controls or windows.
+        Create new callback functions to handle interactions with the new GUI elements.
+
+    Implement New Functionalities:
+        Add new methods to the App class to implement the desired functionality.
+        Integrate these methods into the run loop if they need to be called periodically.
+
+    Modify Existing Logic:
+        Update existing methods to incorporate new behaviors or improve functionality.
+        Ensure compatibility with existing features and maintain code readability.
+
+Example: Adding a New Detection Feature
+
+    Update the GUI:
+        Add a new checkbox to enable/disable the feature.
+        Create a slider or other controls if needed for configuration.
 
 ### annotator.py
 TODO
