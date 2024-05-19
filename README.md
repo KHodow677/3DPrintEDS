@@ -23,8 +23,6 @@ python3 src/app.py
 
 ## How to Use
 
-This is where we talk about how a complete noob is going to use the application, with screenshots of what certain buttons do
-
 After the software has been downloaded, all dependencies installed, and the phsical setup configured, the 3D Print Error Detection System (EDS) can be used. First connect an Intel RealSense camera to your device using an appropriate cable. Rename the .STL file as example.STL and place it in the src folder. Then run the app.py file to start the application and display the GUI. An example of the GUI display is shown below.
 
 <p align="center">
