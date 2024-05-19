@@ -171,7 +171,6 @@ def compare_frame_similarity(self):
     # Compare frames and update error log
 ```
 
-**How to Extend the Application**<br>
 **Adding New Features**<br>
 
 To add new features to the application, follow these general steps:
@@ -217,6 +216,7 @@ def run(self):
 def new_feature_checkbox_change(self, sender, app_data):
     self.new_feature_enabled = app_data
 ```
+The `app.py` script provides a comprehensive framework for monitoring and analyzing 3D printing processes using RealSense cameras and image processing techniques. By following the guidelines above, developers can extend the application with new features and functionalities to enhance its capabilities further.
 
 ### annotator.py
 TODO
