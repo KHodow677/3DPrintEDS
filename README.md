@@ -177,22 +177,21 @@ def compare_frame_similarity(self):
 To add new features to the application, follow these general steps:
 
 - Update the GUI:
--   Modify the create_gui method to add new controls or windows.
-        Create new callback functions to handle interactions with the new GUI elements.
+    - Modify the create_gui method to add new controls or windows.
+    - Create new callback functions to handle interactions with the new GUI elements.
 
-    Implement New Functionalities:
-        Add new methods to the App class to implement the desired functionality.
-        Integrate these methods into the run loop if they need to be called periodically.
+- Implement New Functionalities:
+    - Add new methods to the App class to implement the desired functionality.
+    - Integrate these methods into the run loop if they need to be called periodically.
 
-    Modify Existing Logic:
-        Update existing methods to incorporate new behaviors or improve functionality.
-        Ensure compatibility with existing features and maintain code readability.
+- Modify Existing Logic:
+    - Update existing methods to incorporate new behaviors or improve functionality.
+    - Ensure compatibility with existing features and maintain code readability.
 
-Example: Adding a New Detection Feature
-
-    Update the GUI:
-        Add a new checkbox to enable/disable the feature.
-        Create a slider or other controls if needed for configuration.
+**Example: Adding a New Detection Feature**<br>
+- Update the GUI:
+  - Add a new checkbox to enable/disable the feature.
+  - Create a slider or other controls if needed for configuration.
 
 ### annotator.py
 TODO
