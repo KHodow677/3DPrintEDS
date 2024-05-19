@@ -52,7 +52,7 @@ Our error detection currently has 2 subsystems in place for finding print defect
 
 `app.py` is a Python script designed to interface with a 3D printer monitoring system. The application captures video frames, processes images, performs similarity comparisons, and detects stringing issues. It provides a graphical user interface (GUI) using Dear PyGui to display video feeds and control settings.
 
-**App Class Initialization**
+**App Class Initialization**<br>
 The App class initializes various attributes and components needed for the application, including:
 
 - Configuration options (stringingEnabled, similarityEnabled, etc.)
