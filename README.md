@@ -60,6 +60,36 @@ The App class initializes various attributes and components needed for the appli
 - RealSense pipeline configuration
 - GUI creation
 
+```python
+class App:
+    def __init__(self):
+        # Attribute initialization
+        # RealSense pipeline setup
+        # GUI creation
+        self.create_gui()
+```
+
+**GUI Components**<br>
+
+The create_gui method sets up the graphical user interface using Dear PyGui. It creates several windows and widgets, such as:
+
+- Video display window
+- Image display window
+- Controls window with checkboxes, sliders, color picker, dropdown menu, and buttons
+- Error log window
+
+```python
+def create_gui(self):
+    dpg.create_context()
+    # GUI setup
+    dpg.create_viewport(title='App', width=self.viewport_width, height=self.viewport_height, x_pos=0, y_pos=0)
+    dpg.show_viewport()
+```
+
+Callback Functions<br>
+
+Callback functions handle user interactions with the GUI elements, updating the application's state accordingly.
+
 ### annotator.py
 TODO
 
