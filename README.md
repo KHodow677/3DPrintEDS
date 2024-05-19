@@ -40,9 +40,9 @@ The GUI is composed of several windows including the camera view window, the con
 The first two chekcboxes can be used to disable and enable the stringing and image matching susbsystems. Below them, two sliders can be used to adjust the threshold values for the similarity score and stringing confidence. A color selector can be used to choose the filament color for the filter. The generate slices button will produce slices of the supplied model and populate the sliced images window. A drop down menu is used to match the sliced view to the orientation of the model with respect to the camera. The slices for x1, y1, x2, and y2 are shown in the images window for reference. Finally, a save error file button can be used to save the contents of the error log window.
 
 ### Connecting a Camera
-
+TODO
 ### Loading a Model
-
+TODO
 
 ## Technical Information
 
@@ -192,6 +192,31 @@ To add new features to the application, follow these general steps:
 - Update the GUI:
   - Add a new checkbox to enable/disable the feature.
   - Create a slider or other controls if needed for configuration.
+```python
+def create_gui(self):
+    # Existing GUI setup
+    new_feature_checkbox = dpg.add_checkbox(label='New Feature', default_value=False)
+    dpg.set_item_callback(new_feature_checkbox, self.new_feature_checkbox_change)
+```
+- Implement the Feature Logic
+```python
+def new_feature_detection(self):
+    # Capture and process frames for the new feature
+    # Update error log if necessary
+```
+- Integrate in the Run Loop
+```python
+def run(self):
+    while dpg.is_dearpygui_running():
+        # Existing loop logic
+        if self.new_feature_enabled:
+            self.new_feature_detection()
+```
+- Define Callbacks
+```python
+def new_feature_checkbox_change(self, sender, app_data):
+    self.new_feature_enabled = app_data
+```
 
 ### annotator.py
 TODO
