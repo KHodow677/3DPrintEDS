@@ -217,7 +217,14 @@ def new_feature_checkbox_change(self, sender, app_data):
 The `app.py` script provides a comprehensive framework for monitoring and analyzing 3D printing processes using RealSense cameras and image processing techniques. By following the guidelines above, developers can extend the application with new features and functionalities to enhance its capabilities further.
 
 ### annotator.py
-TODO
+
+`annotator.py` is designed to detect and annotate any stringing in a camera frame.
+
+**Annotator Class Initialization**<br>
+The Annotator class initializes the model that will be used for inference on images. `bestn_100.pt` is a nano-sized object detection model trained using YOLOv8 for 100 epochs. This model was trained using the ["Detection 3D Printimg"](https://universe.roboflow.com/psuwitsurat-nada/detection-3d-printimg/model/3) made by user "psuwitsurat nada" over on Roboflow.
+
+**Annotating Images**<br>
+The annotate method intakes an image alongside a confidence threshold and returns an image annotated with bounding boxes alongside the confidence of any detections.
 
 ### comparator.py
 TODO
