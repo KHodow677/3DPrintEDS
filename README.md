@@ -221,10 +221,15 @@ The `app.py` script provides a comprehensive framework for monitoring and analyz
 `annotator.py` is designed to detect and annotate any stringing in a camera frame.
 
 **Annotator Class Initialization**<br>
-The Annotator class initializes the model that will be used for inference on images. `bestn_100.pt` is a nano-sized object detection model trained using YOLOv8 for 100 epochs. This model was trained using the ["Detection 3D Printimg"](https://universe.roboflow.com/psuwitsurat-nada/detection-3d-printimg/model/3) made by user "psuwitsurat nada" over on Roboflow.
+The Annotator class initializes the model that will be used for inference on images. `bestn_100.pt` is a nano-sized object detection model trained using YOLOv8 for 100 epochs. This model was trained using the ["Detection 3D Printimg"](https://universe.roboflow.com/psuwitsurat-nada/detection-3d-printimg/model/3) dataset made by user "psuwitsurat nada" over on Roboflow.
 
 **Annotating Images**<br>
-The annotate method intakes an image alongside a confidence threshold and returns an image annotated with bounding boxes alongside the confidence of any detections.
+The annotate method intakes an image alongside a confidence threshold and returns an image annotated with bounding boxes alongside the confidence score of any detections. Only detections with a confidence score above the confidence threshold will output.
+
+```python
+def annotate(self, frame, conf_val):
+    return ann_image, conf_vals
+```
 
 ### comparator.py
 TODO
