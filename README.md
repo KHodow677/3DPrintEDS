@@ -5,7 +5,8 @@ This project is a deliverable prototype from the class ME266K at the University 
 ## Installation and Setup
 
 ### Hardware Setup
-TODO
+This project recommends the use of an Intel Realsense D435i camera. This camera uses a USB Type-C connector, which can be accessed by removing the USB3 cap on the side of the camera. The team recommends using the camera's provided cable, as other cables might provide connection issues. Using the provided cable, connect the Type-C end to the camera and connect the USB 3.0 end to your device. A floor mount was designed to position the D435i cameras in a side view of the Swarm platform's printing beds. This file can be found as 'D435iMount_SwarmFloor.STL'. Screw the camera into the mount using the 1/4-20 UNC thread mounting point on the underside of the camera, and place the mount in a hole adjacent to the print bed.
+
 ### Package Dependencies
 This project requires prior installation of `Python` and the `pip` package manager. 
 
@@ -35,10 +36,8 @@ The GUI is composed of several windows including the camera view window, the con
   <img src="docRes/Control Panel Image.png" alt="Control Panel Image" width="500" height="auto"/>
 </p>
 
-The first two chekcboxes can be used to disable and enable the stringing and image matching susbsystems. Below them, two sliders can be used to adjust the threshold values for the similarity score and stringing confidence. A color selector can be used to choose the filament color for the filter. The generate slices button will produce slices of the supplied model and populate the sliced images window. A drop down menu is used to match the sliced view to the orientation of the model with respect to the camera. The slices for x1, y1, x2, and y2 are shown in the images window for reference. Finally, a save error file button can be used to save the contents of the error log window.
+The first two checkboxes can be used to disable and enable the stringing and image matching susbsystems. Below them, two sliders can be used to adjust the threshold values for the similarity score and stringing confidence. A color selector can be used to choose the filament color for the filter. The generate slices button will produce slices of the supplied model and populate the sliced images window. A drop down menu is used to match the sliced view to the orientation of the model with respect to the camera. The slices for x1, y1, x2, and y2 are shown in the images window for reference. Finally, a save error file button can be used to save the contents of the error log window.
 
-### Connecting a Camera
-TODO
 ### Loading a Model
 TODO
 
@@ -230,7 +229,7 @@ class Annotator:
 ```
 
 **Annotating Images**<br>
-The annotate method intakes an image alongside a confidence threshold and returns an image annotated with bounding boxes alongside the confidence score of any detections. Only detections with a confidence score above the confidence threshold will output.
+The annotate method intakes an image alongside a confidence threshold. It then returns an annotated image with bounding boxes alongside the confidence score of any detections. Only detections with a confidence score above the confidence threshold will output to the error log.
 
 ```python
 def annotate(self, frame, conf_val):
