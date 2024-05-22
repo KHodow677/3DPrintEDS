@@ -5,7 +5,7 @@ This project is a deliverable prototype from the class ME266K at the University 
 ## Installation and Setup
 
 ### Hardware Setup
-This project recommends the use of an Intel Realsense D435i camera. This camera uses a USB Type-C connector, which can be accessed by removing the USB3 cap on the side of the camera. The team recommends using the camera's provided cable, as other cables might provide connection issues. Using the provided cable, connect the Type-C end to the camera and connect the USB 3.0 end to your device. A floor mount was designed to position the D435i cameras in a side view of the Swarm platform's printing beds. This file can be found as 'D435iMount_SwarmFloor.STL'. Screw the camera into the mount using the 1/4-20 UNC thread mounting point on the underside of the camera, and place the mount in a hole adjacent to the print bed.
+This project recommends the use of an Intel Realsense D435i camera. This camera uses a USB Type-C connector, which can be accessed by removing the USB3 cap on the side of the camera. The team recommends using the camera's provided cable, as other cables might provide connection issues. Using the provided cable, connect the Type-C end to the camera and connect the USB 3.0 end to your device. A floor mount was designed to position the D435i cameras in a side view of the Swarm platform's printing beds. This file can be found as `D435iMount_SwarmFloor.STL`. Screw the camera into the mount using the 1/4-20 UNC thread mounting point on the underside of the camera, and place the mount in a hole adjacent to the print bed.
 
 ### Package Dependencies
 This project requires prior installation of `Python` and the `pip` package manager. 
